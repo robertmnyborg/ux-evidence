@@ -4,8 +4,23 @@ A Claude Code skill that makes an agent ground UI and UX work in evidence before
 
 ## Install
 
+Claude Code:
+
+```
+/plugin marketplace add robertmnyborg/claude-harness
+/plugin install ux-evidence@claude-harness
+```
+
+Codex, Cursor, and other agents that read `SKILL.md`, via the [skills CLI](https://skills.sh):
+
 ```bash
-git clone <this repo> ux-evidence
+npx skills add robertmnyborg/ux-evidence
+```
+
+### Manual install
+
+```bash
+git clone https://github.com/robertmnyborg/ux-evidence
 cp -R ux-evidence/skills/* ~/.claude/skills/
 ```
 
